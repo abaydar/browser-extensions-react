@@ -1,13 +1,13 @@
-import './Extension.css'
+import './ExtensionCard.css'
 
-export interface ExtensionProps {
+export interface ExtensionCardProps {
     logo: string;
     name: string;
     description: string;
     isActive: boolean;
 }
 
-const Extension = ({ logo, name, description, isActive }: ExtensionProps) => {
+const ExtensionCard = ({ logo, name, description, isActive }: ExtensionCardProps) => {
     return (
         <div>
             <img src={logo} alt={`${name}-logo`}/>
@@ -19,4 +19,4 @@ const Extension = ({ logo, name, description, isActive }: ExtensionProps) => {
     )
 }
 
-export default Extension;
+export default ExtensionCard;
